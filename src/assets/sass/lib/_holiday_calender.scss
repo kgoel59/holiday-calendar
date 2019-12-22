@@ -1,0 +1,78 @@
+.holiday-calendar {
+    .modal {
+        .modal-body {
+            border-radius: 15px;
+            .heading {
+                text-align: center;
+                color: black;
+                padding: 15px;
+                font-weight: 700;
+                font-size: xx-large;
+            }
+            .name {
+                text-align: center;
+                color: black;
+                padding: 15px;
+                font-size: medium;
+            }
+            .type {
+                text-align: center;
+                .type-box {
+                    border: medium;
+                    background-color: blueviolet;
+                    color: white;
+                    border-radius: 20px;
+                    padding: 5px;
+                }
+            }
+            .description {
+                padding: 10px;
+                margin: 5px;
+            }
+            .closemodal {
+                text-align: center;
+            }
+        }
+    }
+    .heading {
+        .heading-text {
+            text-align: center;
+            font-size: x-large;
+            font-weight: 500;
+            color: black;
+            padding: 15px;
+        }
+    }
+    .controls {
+        .control {
+            padding: 0px;
+            button {
+                width: 100%;
+            }
+        }
+    }
+    .calendar {
+        margin-top: 25px;
+        .card {
+            width: 100%;
+            .card-body {
+
+                .date {
+                    color: black;
+                    padding: 8px;
+
+                    .date-day {
+                        font-weight: 900;
+                        font-size: 40px;
+                        text-align: center;
+                    }
+                    .date-month {
+                        font-weight: 600;
+                        font-size: 15px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
