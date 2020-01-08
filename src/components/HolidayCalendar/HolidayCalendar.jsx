@@ -39,7 +39,7 @@ function HolidayDates(dates,todaysDate,passed,viewHoliday) {
         const month = date[1];
         const year = date[0];
 
-        if(((day > todaysDay) && (month >= todaysMonth)) || (year > todaysYear)) {
+        if(((day > todaysDay) || (month > todaysMonth)) || (year > todaysYear)) {
             if(passed === true) {
                 return undefined
             } else {

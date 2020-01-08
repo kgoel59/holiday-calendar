@@ -11,13 +11,13 @@ class HolidayCalendar extends Component {
             name: 'No Holiday Today',
             listOfHolidays : [],
             listOfDates : [],
-            todaysDate: "2019-01-14",
+            todaysDate: "2020-01-01",
             isTodayHoliday: false,
             indexOfHoliday: null,
             passed: false,
 
             modalState: false,
-            holidayDate:"2019-01-01",
+            holidayDate:"2020-01-01",
             holidayName:"New Year's Day",
             holidayType: "National holiday",
             holidayDescription: "New Year’s Day is celebrated many countries such as in India on the January 1 in the Gregorian calendar."
@@ -99,7 +99,7 @@ class HolidayCalendar extends Component {
       this.setState({
         holidayDate: holiday.date.iso,
         holidayName: holiday.name,
-        holidayType: holiday.type[0],
+        holidayType: holiday.type.join(','),
         holidayDescription: holiday.description
       }, this.toggleModal)
     }
